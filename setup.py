@@ -82,7 +82,7 @@ setup(
     "opencv-python-headless>=4.2",
     "numpy>=1.18",
     # these packages are universal
-    "taichi>=1.0",
+    # "taichi>=1.0",
     "numba>=0.51",
   ],
   extras_require={

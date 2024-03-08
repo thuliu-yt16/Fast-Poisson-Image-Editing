@@ -17,12 +17,13 @@ try:
 except ImportError:
   numba_solver = None  # type: ignore
 
-try:
-  from fpie import taichi_solver
-  ALL_BACKEND += ["taichi-cpu", "taichi-gpu"]
-  DEFAULT_BACKEND = "taichi-cpu"
-except ImportError:
-  taichi_solver = None  # type: ignore
+# try:
+#   from fpie import taichi_solver
+#   ALL_BACKEND += ["taichi-cpu", "taichi-gpu"]
+#   DEFAULT_BACKEND = "taichi-cpu"
+# except ImportError:
+#   taichi_solver = None  # type: ignore
+taichi_solver = None
 
 try:
   from fpie import core_gcc  # type: ignore
